@@ -12,8 +12,8 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         if (getIntent().hasExtra("com.example.android.sayge.SOMETHING")) {
-            TextView tv = (TextView) findViewById(.id.textView);
-            String text = getIntent().getExtras().getString("com.example.android.sayge.SOMETHING")
+            TextView tv = (TextView) findViewById(R.id.textView);
+            String text = getIntent().getExtras().getString("com.example.android.sayge.SOMETHING");
                     tv.setText(text);
         }
     }
